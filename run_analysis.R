@@ -1,3 +1,23 @@
+# Function renames columns names for the allData dataframe
+renameColumns <- function (names) {
+    x <- gsub("...X", " X axis", names)
+    x <- gsub("...Y", " Y axis", x)
+    x <- gsub("...Z", " Z axis", x)
+    x <- gsub(".mean", " Mean", x)
+    x <- gsub(".std\\.*", " StDev", x)    
+    x <- gsub("tBodyAcc", "Time Body Acc", x)
+    x <- gsub("tBodyGyro", "Time Body Gyro", x)
+    x <- gsub("tGravityAcc", "Time Gravity Acc", x)
+    x <- gsub("fBodyAcc", "Frequency Body Acc", x)    
+    x <- gsub("fBodyGyro", "Frequency Body Gyro", x) 
+    x <- gsub("Jerk", " Jerk", x)
+    x <- gsub("Mag", " Mag", x)
+    x <- gsub("fBodyBody", "Frequency By Body ", x)
+    
+    return (x)
+}
+
+
 # Get features or variable names and reduce them to the required ones in step 2
 features <- grep("[a-z]", scan("./data/features.txt", what = character()), value = TRUE)
 requiredFeatures <- features[grepl(".+std.+|.+mean[[:punct:]]{2}.+", features)]
@@ -34,7 +54,7 @@ names(allTestData)[2] <- paste("Activity")
 
 # Combine test and train data
 allData <- rbind(allTrainData,allTestData)
-
+names(allData) <- renameColumns(names(allData))
 save(allData,file = "allData")
 
 library(reshape2)
@@ -44,11 +64,8 @@ meltData <- melt(allData, id=c("Subject","Activity"))
 aggData <- dcast(meltData,Subject + Activity ~ variable, mean)
 detach(allData)
 
+# Write averaged data to file
 write.table(aggData, "./aggData.txt", row.name = FALSE)
-
-
-
-
 
 
 

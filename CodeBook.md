@@ -1,7 +1,7 @@
 ---
 title: "Code Book"
 author: "Maury Miller"
-date: "Saturday, July 26, 2014"
+date: "Wednesday, March 18, 2015"
 output: html_document
 ---
 
@@ -10,11 +10,11 @@ output: html_document
 DATA DICTIONARY - Tidy Data File (aggData.txt)
 
 Subject 1
-
+=========================================
     Number between 1-30 representing a test subject
 
 Activity 2   
-
+=========================================
     1 "WALKING"
 
     2 "WALKING\_UPSTAIRS"
@@ -29,118 +29,121 @@ Activity 2
 
 
 
-Test measurement data
+Test measurement data 3-59  
+Variables with Acc in the name are measured in standard gravity units 'g'.
+Variables with with Gyro in the name are by radians/second.
+=========================================
 
-tBodyAcc.mean-X
+Time Body Acc Mean X axis
 
-tBodyAcc.mean-Y
+Time Body Acc Mean Y axis
 
-tBodyAcc.mean-Z
+Time Body Acc Mean Z axis
 
-tBodyAcc.std-X
+Time Body Acc StDev X axis
 
-tBodyAcc.std-Y
+Time Body Acc StDev Y axis
 
-tBodyAcc.std-Z
+Time Body Acc StDev Z axis
 
-tGravityAcc.mean-X
+Time Gravity Acc Mean X axis
 
-tGravityAcc.mean-Y
+Time Gravity Acc Mean Y axis
 
-tGravityAcc.mean-Z
+Time Gravity Acc Mean Z axis
 
-tGravityAcc.std-X
+Time Gravity Acc StDev X axis
 
-tGravityAcc.std-Y
+Time Gravity Acc StDev Y axis
 
-tGravityAcc.std-Z
+Time Gravity Acc StDev Z axis
 
-tBodyAccJerk.mean-X
+Time Body Acc Jerk Mean X axis
 
-tBodyAccJerk.mean-Y
+Time Body Acc Jerk Mean Y axis
 
-tBodyAccJerk.mean-Z
+Time Body Acc Jerk Mean Z axis
 
-tBodyAccJerk.std-X
+Time Body Acc Jerk StDev X axis
 
-tBodyAccJerk.std-Y
+Time Body Acc Jerk StDev Y axis
 
-tBodyAccJerk.std-Z
+Time Body Acc Jerk StDev Z axis
 
-tBodyGyro.mean-X
+Time Body Gyro Mean X axis
 
-tBodyGyro.mean-Y
+Time Body Gyro Mean Y axis
 
-tBodyGyro.mean-Z
+Time Body Gyro Mean Z axis
 
-tBodyGyro.std-X
+Time Body Gyro StDev X axis
 
-tBodyGyro.std-Y
+Time Body Gyro StDev Y axis
 
-tBodyGyro.std-Z
+Time Body Gyro StDev Z axis
 
-tBodyGyroJerk.mean-X
+Time Body Gyro Jerk Mean X axis
 
-tBodyGyroJerk.mean-Y
+Time Body Gyro Jerk Mean Y axis
 
-tBodyGyroJerk.mean-Z
+Time Body Gyro Jerk Mean Z axis
 
-tBodyGyroJerk.std-X
+Time Body Gyro Jerk StDev X axis
 
-tBodyGyroJerk.std-Y
+Time Body Gyro Jerk StDev Y axis
 
-tBodyGyroJerk.std-Z
+Time Body Gyro Jerk StDev Z axis
 
-tBodyAccMag.std..
+Time Body Acc  Mag StDev
 
-tGravityAccMag.std..
+Time Gravity Acc Mag StDev
 
-tBodyAccJerkMag.std..
+Time Body Acc Jerk Mag StDev
 
-tBodyGyroMag.std..
+Time Body Gyro Mag StDev
 
-tBodyGyroJerkMag.std..
+Time Body Gyro Jerk Mag StDev
 
-fBodyAcc.mean-X
+Frequency Body Acc Mean X axis
 
-fBodyAcc.mean-Y
+Frequency Body Acc Mean Y axis
 
-fBodyAcc.mean-Z
+Frequency Body Acc Mean Z axis
 
-fBodyAcc.std-X
+Frequency Body Acc StDev X axis
 
-fBodyAcc.std-Y
+Frequency Body Acc StDev Y axis
 
-fBodyAcc.std-Z
+Frequency Body Acc StDev Z axis
 
-fBodyAccJerk.mean-X
+Frequency Body Acc Jerk Mean X axis
 
-fBodyAccJerk.mean-Y
+Frequency Body Acc Jerk Mean Y axis
 
-fBodyAccJerk.mean-Z
+Frequency Body Acc Jerk Mean Z axis
 
-fBodyAccJerk.std-X
+Frequency Body Acc Jerk StDev X axis
 
-fBodyAccJerk.std-Y
+Frequency Body Acc Jerk StDev Y axis
 
-fBodyAccJerk.std-Z
+Frequency Body Acc Jerk StDev Z axis
 
-fBodyGyro.mean-X
+Frequency Body Gyro Mean X axis
 
-fBodyGyro.mean-Y
+Frequency Body Gyro Mean Y axis
 
-fBodyGyro.mean-Z
+Frequency Body Gyro Mean Z axis
 
-fBodyGyro.std-X
+Frequency Body Gyro StDev X axis
 
-fBodyGyro.std-Y
+Frequency Body Gyro StDev Y axis
 
-fBodyGyro.std-Z
+Frequency Body Gyro StDev Z axis
 
-fBodyAccMag.std..
+Frequency Body Acc Mag StDev
 
-fBodyBodyAccJerkMag.std..
+Frequency Body Body Acc Jerk Mag StDev
 
-fBodyBodyGyroMag.std..
+Frequency Body Body Gyro Mag StDev
 
-fBodyBodyGyroJerkMag.std..
+Frequency Body Body Gyro Jerk Mag StDev
